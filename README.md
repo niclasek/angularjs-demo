@@ -1,0 +1,1 @@
+A demo angular app for learning purposes
