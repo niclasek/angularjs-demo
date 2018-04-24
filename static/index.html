@@ -1,12 +1,12 @@
 <html>
 <head>
 	<script src="bower_components/angular/angular.min.js"></script>
-
 	<script src="app/app.js"></script>
-
 	<script src="app/services/srvc-users.js"></script>
-
 	<script src="app/controllers/ctrl-users.js"></script>
+	<script src="app/components/greet-user.component.js"></script>
+	<script src="app/components/user-list.component.js"></script>
+
 </head>
 
 <body ng-app="app">
@@ -20,10 +20,9 @@
 	</ul>
 </div>
 
-<base-container title="'asdasdasdasd'"></base-container>
 
-<div validate>
-	{{title}}
-</div>
+<greet-user></greet-user>
+
+<user-list></user-list>
 </body>
 </html>
