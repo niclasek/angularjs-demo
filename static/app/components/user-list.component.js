@@ -4,14 +4,8 @@
 angular.
 module('app').
 component('userList', {
-	template:
-	'<ul>' +
-	'<li ng-repeat="user in $ctrl.users">' +
-	'<span>{{user.name}}</span>' +
-	'<p>{{user.snippet}}</p>' +
-	'</li>' +
-	'</ul>',
-	controller: function PhoneListController() {
+	templateUrl:'app/templates/fragments/user-list.template.html',
+	controller: function UserListController() {
 		this.users = [
 			{
 				name: 'Bob Dylan',
