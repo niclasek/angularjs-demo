@@ -1,18 +1,16 @@
 app.controller('UsersController', function UsersController($rootScope, $scope, $interval, UserService) {
 	$scope.title = 0;
 
-	$rootScope.title = "asdasd";
-
-	$scope.phones = [
+	$scope.users = [
 		{
-			name: 'Nexus S',
-			snippet: 'Fast just got faster with Nexus S.'
+			name: 'Steven Spielberg',
+			snippet: 'Jaws as a jaw'
 		}, {
-			name: 'Motorola XOOM™ with Wi-Fi',
-			snippet: 'The Next, Next Generation tablet.'
+			name: 'Lars von Trier',
+			snippet: 'A genius'
 		}, {
-			name: 'MOTOROLA XOOM™',
-			snippet: 'The Next, Next Generation tablet.'
+			name: 'Stanley Kubrick',
+			snippet: 'peace'
 		}
 	];
 

@@ -12,6 +12,12 @@
 <body ng-app="app">
 <div ng-controller="UsersController">
 	{{title}}
+	<ul>
+		<li ng-repeat="user in users">
+			<span>{{user.name}}</span>
+			<p>{{user.snippet}}</p>
+		</li>
+	</ul>
 </div>
 
 <base-container title="'asdasdasdasd'"></base-container>
