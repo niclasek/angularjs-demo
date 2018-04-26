@@ -12,11 +12,19 @@
 	<script src="app/modules/movie-list/movie-list.component.js"></script>
 	<script src="app/modules/core/movie.module.js"></script>
 	<script src="app/modules/core/movie.service.js"></script>
+	<script src="app/directives/ActorsInfo.js"></script>
 
 
 </head>
 
 <body ng-app="app">
+
+<div ng-controller="Controller">
+	<my-actor info="naomi"></my-actor>
+	<hr>
+	<my-actor info="igor"></my-actor>
+</div>
+
 <div ng-controller="DirectorsController">
 	{{title}}
 	Search: <input ng-model="$ctrl.query" />
