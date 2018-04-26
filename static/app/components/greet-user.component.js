@@ -1,8 +1,8 @@
 angular.
 module('app').
 component('greetUser', {
-	template: 'Hello, {{$ctrl.user}}!',
+	template: 'Hello, {{$ctrl.who}}!',
 	controller: function GreetUserController() {
-		this.user = 'world';
+		this.who = 'world';
 	}
 });

@@ -1,7 +1,7 @@
-app.controller('UsersController', function UsersController($rootScope, $scope, $interval, UserService) {
+app.controller('DirectorsController', function DirectorsController($rootScope, $scope, $interval, UserService) {
 	$scope.title = 0;
 
-	$scope.users = [
+	$scope.directors = [
 		{
 			name: 'Steven Spielberg',
 			snippet: 'Jaws as a jaw'

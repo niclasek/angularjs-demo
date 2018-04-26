@@ -2,11 +2,11 @@
 
 // Register `userList` component, along with its associated controller and template
 angular.
-module('userList').
-component('userList', {
-	templateUrl:'app/modules/user-list/user-list.template.html',
+module('artistList').
+component('artistList', {
+	templateUrl:'app/modules/artist-list/artist-list.template.html',
 	controller: function UserListController() {
-		this.users = [
+		this.artists = [
 			{
 				name: 'Bob Dylan',
 				snippet: 'Sing sing sing',
