@@ -9,14 +9,18 @@ component('userList', {
 		this.users = [
 			{
 				name: 'Bob Dylan',
-				snippet: 'Sing sing sing'
+				snippet: 'Sing sing sing',
+				age: 62
 			}, {
-				name: 'Bob Dylan 2',
-				snippet: 'Sing sing sing'
+				name: 'Amy Whinehouse',
+				snippet: 'Sing sing sing',
+				age: 27
 			}, {
-				name: 'Bob Dylan 3',
-				snippet: 'Sing sing sing'
+				name: 'Motta',
+				snippet: 'Sing sing sing',
+				age: 32
 			}
 		];
+		this.orderProp = "age";
 	}
 });
