@@ -1,4 +1,4 @@
-app.controller('DirectorsController', function DirectorsController($rootScope, $scope, $interval, UserService) {
+app.controller('DirectorsController', function DirectorsController($rootScope, $scope, $interval, DirectorService) {
 	$scope.title = 0;
 
 	$scope.directors = [
@@ -15,7 +15,7 @@ app.controller('DirectorsController', function DirectorsController($rootScope, $
 	];
 
 	$scope.init = function () {
-		UserService.get(5).then(function (data) {
+		DirectorService.get(5).then(function (data) {
 			$scope.title = $rootScope.aMethod(data);
 		});
 	};
