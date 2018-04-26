@@ -2,6 +2,7 @@
 
 var app = angular.module('app', [
 	// ...which depends on the module
-	'artistList'
+	'artistList',
+	'movieList'
 ]);
 

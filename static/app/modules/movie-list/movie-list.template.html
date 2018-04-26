@@ -10,7 +10,7 @@
 				Sort by:
 				<select ng-model="$ctrl.orderProp">
 					<option value="name">Alphabetical</option>
-					<option value="age">Age</option>
+					<option value="length">Length</option>
 				</select>
 			</p>
 
@@ -19,10 +19,10 @@
 		<div class="col-md-10">
 			<!--Body content-->
 			<ul>
-				<li ng-repeat="user in $ctrl.users | filter:$ctrl.query | orderBy:$ctrl.orderProp">
-					<span>{{user.name}}</span>
-					<p>{{user.snippet}}</p>
-					<p>{{user.age}}</p>
+				<li ng-repeat="movie in $ctrl.movies | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+					<span>{{movie.name}}</span>
+					<p>{{movie.snippet}}</p>
+					<p>{{movie.length}}</p>
 				</li>
 			</ul>
 

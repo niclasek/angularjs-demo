@@ -5,8 +5,8 @@ angular.
 module('movieList').
 component('movieList', {
 	templateUrl:'app/modules/movie-list/movie-list.template.html',
-	controller: function UserListController() {
-		this.users = [
+	controller: function MovieListController() {
+		this.movies = [
 			{
 				name: 'Bob Dylan',
 				snippet: 'Sing sing sing',
