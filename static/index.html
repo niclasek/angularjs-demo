@@ -5,15 +5,17 @@
 	<script src="app/services/srvc-users.js"></script>
 	<script src="app/controllers/ctrl-users.js"></script>
 	<script src="app/components/greet-user.component.js"></script>
-	<script src="app/components/user-list.component.js"></script>
+	<script src="app/modules/user-list/user-list.module.js"></script>
+	<script src="app/modules/user-list/user-list.component.js"></script>
 
 </head>
 
 <body ng-app="app">
 <div ng-controller="UsersController">
 	{{title}}
+	Search: <input ng-model="$ctrl.query" />
 	<ul>
-		<li ng-repeat="user in users">
+		<li ng-repeat="user in users | filter:$ctrl.query">
 			<span>{{user.name}}</span>
 			<p>{{user.snippet}}</p>
 		</li>

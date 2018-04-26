@@ -2,9 +2,9 @@
 
 // Register `userList` component, along with its associated controller and template
 angular.
-module('app').
+module('userList').
 component('userList', {
-	templateUrl:'app/templates/fragments/user-list.template.html',
+	templateUrl:'app/modules/user-list/user-list.template.html',
 	controller: function UserListController() {
 		this.users = [
 			{

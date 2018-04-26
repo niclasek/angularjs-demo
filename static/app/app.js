@@ -1,2 +1,7 @@
-var app = angular.module('app', []);
+'use strict'
+
+var app = angular.module('app', [
+	// ...which depends on the module
+	'userList'
+]);
 
